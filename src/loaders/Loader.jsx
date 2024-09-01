@@ -3,24 +3,12 @@ import "./Loader.css";
 
 const Loader = () => {
   return (
-    <div className="loader-main">
-      <div className="lds-spinner">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <img src="/images/s.png" alt="" className="w-[250px]" />
-      </div>
+    <div class="main-wrapper">
+      <svg>
+        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+          Hair-Oil-BD
+        </text>
+      </svg>
     </div>
   );
 };
