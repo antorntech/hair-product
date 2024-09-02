@@ -31,7 +31,7 @@ const Footer = () => {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className="font-bold text-[#71c778] hover:text-[#44b84e] transition-all duration-300"
+                    className="font-bold text-black hover:text-[#44b84e] transition-all duration-300"
                   >
                     {item.label}
                   </Link>
