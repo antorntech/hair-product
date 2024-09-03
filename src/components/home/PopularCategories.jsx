@@ -34,12 +34,12 @@ const PopularCategories = () => {
     },
   ];
   return (
-    <div className="px-5 pt-[30px] md:pt-[100px] max-w-screen-xl mx-auto">
+    <div className="px-5 py-[30px] md:py-[100px] max-w-screen-xl mx-auto">
       <SectionHeader
         title="Popular Categories"
         subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur explicabo repellat placeat inventore voluptates cumque pariatur. Accusamus, magni magnam."
       />
-      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="mt-5 md:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {currentItems.map((item) => (
           <div
             key={item.id}
