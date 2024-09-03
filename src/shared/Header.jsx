@@ -76,9 +76,15 @@ const Header = () => {
               <NavLink
                 key={item.path}
                 to={item.path}
+                style={({ isActive, isPending, isTransitioning }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "#44B84E" : "",
+                  };
+                }}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-white text-[16px] font-semibold transition duration-300"
+                    ? "text-white hover:text-green-600  text-[16px] font-semibold transition duration-300"
                     : "text-white text-[16px] font-semibold hover:text-green-600 transition duration-300"
                 }
               >
