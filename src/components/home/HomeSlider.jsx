@@ -17,7 +17,7 @@ const HomeSlider = () => {
           </p>
           <button className="bg-[#44b84e] border-2 border-[#44b84e] hover:rounded-md hover:bg-[#71c778] text-white px-5 py-2 mt-5 shadow-lg hover:border-[#71c778] hover:text-white hover:border-2  transition-all duration-500">
             Shop Now
-            <i className="fa-solid fa-arrow-right ml-2"></i>
+            <i class="fa-solid fa-cart-shopping ml-2"></i>
           </button>
         </div>
       </div>
