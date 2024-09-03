@@ -26,6 +26,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const user = localStorage.getItem("user");
 
   const myMenu = [
@@ -89,7 +90,7 @@ const Header = () => {
       </div>
 
       {/* mobile menu */}
-      <div className="relative w-full bg-[#71c778] px-5 block md:hidden gap-3">
+      <div className="w-full bg-[#71c778] px-5 block fixed md:hidden gap-3">
         <div className=" py-2 flex items-center justify-between shadow-sm">
           <div>
             <Link to="/" className="font-bold text-white text-[16px]">
@@ -107,8 +108,8 @@ const Header = () => {
           </div>
         </div>
         <div
-          className={`z-50 absolute opacity-0 left-0 top-40 w-full flex flex-col gap-3 bg-[#2b3e4b] p-5 transition-all ease-out duration-500 ${
-            menuOpen ? "top-[75px] opacity-100" : "hidden"
+          className={`scale-up-ver-top z-50 absolute opacity-0 left-0 top-0 translate-y-[-100%] w-full flex flex-col gap-3 bg-[#71c778] p-5 transition-all ease-out duration-500 ${
+            menuOpen ? "opacity-100" : "hidden"
           }`}
         >
           {myMenu.map((item) => (
@@ -116,7 +117,7 @@ const Header = () => {
               key={item.path}
               onClick={() => setMenuOpen(!menuOpen)}
               to={item.path}
-              className="text-[#929ba2] text-[18px] font-semibold hover:text-green-600 transition duration-300"
+              className="text-[#ffffff] text-[18px] font-semibold hover:text-green-600 transition duration-300"
             >
               {item.label}
             </Link>
